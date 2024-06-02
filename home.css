@@ -404,7 +404,7 @@ footer {
 @media (max-width: 480px) {
     /* Further adjustments for screens with a max width of 480px */
     body {
-        font-size: 12px;
+        font-size: 8px;
     }
 
     header h1 {

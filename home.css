@@ -6,7 +6,7 @@
 
 /* Apply a background color and font styles to the whole page ... Futura,Sans-serif Calisto MT, sans-serif */
 body {
-    font-family: Verdana,sans-serif ;
+    font-family: Verdana, sans-serif;
     background-color: #005400; /*#f2f2f2;*/
     margin: 0 auto; /* Center the content horizontally */
     padding: 0;
@@ -25,7 +25,6 @@ header {
     margin-top: 10px;
     margin-bottom: -14px; 
 }
-
 
 /*header {
     color: yellow; 
@@ -70,11 +69,6 @@ header {
     }
 }
 } 
-
-
-
-
-
 
 /* Style the header title */
 header h1 {
@@ -358,70 +352,70 @@ footer {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); /* Add larger shadow on hover */
 }
 
-/* RESPONSIVE SETTING FOR MOBILE DEVICES 
+/* RESPONSIVE SETTINGS FOR MOBILE DEVICES */
 @media (max-width: 768px) {
     /* Adjust font size for screens with a max width of 768px */
-    /* body {
+    body {
         font-size: 16px;
+        max-width: 90%; /* Adjust the max-width */
     }
-}
- /* @media (max-width: 768px) {
-    /* Adjust header and footer styles for smaller screens */
-     /* header {
+
+    header {
         padding: 10px;
     }
+
     footer {
         padding: 10px;
     }
-} */
-/*==========================================================================*/
-/*==========================================================================*/
-/* clothing.css */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    padding: 1px;
-    text-align: center;
+
+    .governor-image {
+        margin-right: 0;
+        width: 120px; /* Adjust the width for smaller screens */
+    }
+
+    nav li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .slider {
+        max-width: 100%;
+    }
+
+    .slide {
+        flex: 0 0 100%; /* Each slide takes up the full width */
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-column {
+        padding: 0;
+        text-align: center;
+    }
 }
 
-.grid-item {
-    position: relative;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
+@media (max-width: 480px) {
+    /* Further adjustments for screens with a max width of 480px */
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .governor-image {
+        width: 100px; /* Adjust the width for smaller screens */
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
 }
-
-.grid-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: Cyan;
-    font-size: 18px;
-    font-weight: bold;
-    background-color: rgba(0, 0, 0, 0.2); /* Background color with transparency */
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-
-}
-
-.grid-item a {
-    text-decoration: none;
-    color: inherit;
-    display: block;
-}
-
-.grid-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-}
-

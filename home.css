@@ -396,7 +396,7 @@ footer {
         margin-right: 5px;
     }
     nav a {
-	font-size: 10px;
+	font-size: 7px;
     }
 
     footer {
@@ -404,7 +404,8 @@ footer {
     }
 
     .footer-container {
-        flex-direction: column;
+	display: flex;
+        flex-direction: row;
         align-items: center;
     }
 

@@ -401,14 +401,49 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
     /* Further adjustments for screens with a max width of 480px */
-    body {
+/*     body {
         font-size: 8px;
     }
 
     header h1 {
         font-size: 15px;
+    } */
+
+/*     .governor-image {
+        width: 100px; /* Adjust the width for smaller screens */
+/*     }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+
+/*     nav a {
+       text-decoration: none;
+       color: #00FF00;
+       font-weight: bold;
+       font-family: Arial, sans-serif;
+       font-size: 12px;
+   } */ 
+
+   /* Add hover effect to navigation links...    text-decoration: underline; */
+/*    nav a:hover {
+       color: yellow;
+       font-size: 15px;	
+       font-weight: bold;
+   } */ 
+
+/* } */
+
+@media (max-width: 480px) {
+    /* Further adjustments for screens with a max width of 480px */
+    body {
+        font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 28px;
     }
 
     .governor-image {
@@ -416,22 +451,45 @@ footer {
     }
 
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav li {
+        display: inline;
+        margin-right: 10px; /* Adjust spacing as needed */
     }
 
     nav a {
-       text-decoration: none;
-       color: #00FF00;
-       font-weight: bold;
-       font-family: Arial, sans-serif;
-       font-size: 12px;
-   }
+        font-size: 12px; /* Adjust font size if necessary */
+    }
 
-   /* Add hover effect to navigation links...    text-decoration: underline; */
-   nav a:hover {
-       color: yellow;
-       font-size: 15px;	
-       font-weight: bold;
-   }
-	
+    .footer-container {
+        flex-direction: row; /* Ensure footer items are ordered horizontally */
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; /* Wrap items if they don't fit in one line */
+    }
+
+    .footer-column {
+        flex: 1 1 100%; /* Ensure each column takes up the full width */
+        padding: 10px;
+        text-align: center;
+    }
+
+    .footer-column ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .footer-column ul li {
+        display: inline;
+        margin: 0 5px; /* Adjust spacing as needed */
+        font-size: 10px;
+    }
 }

@@ -521,7 +521,7 @@ nav ul {
 }
 
 nav li {
-    display: inline;
+    display: flex;
     margin-right: 10px;
 }
 
@@ -681,8 +681,6 @@ footer {
 }
 
 /* ===========SLIDING IMAGES SETTING=========== */
-/* styles.css */
-
 .slider {
     overflow: hidden;
     position: relative;

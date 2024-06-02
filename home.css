@@ -395,6 +395,9 @@ footer {
     nav li {
         margin-right: 5px;
     }
+    nav a {
+	font-size: 10px;
+    }
 
     footer {
         padding: 4px 0;

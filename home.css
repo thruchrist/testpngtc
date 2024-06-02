@@ -622,7 +622,7 @@ footer {
     justify-content: space-around;
     max-width: 480px;
     margin: 0 auto;
-	margin-top: -8px;
+    margin-top: -8px;
 }
 
 .footer-column {
@@ -645,9 +645,10 @@ footer {
 
 .footer-column ul li {
     margin-bottom: -1px;
-	text-align: center;
-	font-family: Century Gothic;
-	font-size: 10px;
+    text-align: center;
+    font-family: Century Gothic;
+    font-size: 10px;
+    display: flex;
 }
 
 .footer-column ul li a {
@@ -667,8 +668,8 @@ footer {
 
 .footer-bottom p {
     font-size: 10px;
-	margin-top: 10px;
-	margin-bottom: -8px;
+    margin-top: 10px;
+    margin-bottom: -8px;
 }
 
 .footer-bottom a {

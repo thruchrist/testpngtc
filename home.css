@@ -354,40 +354,50 @@ footer {
 
 /* RESPONSIVE SETTINGS FOR MOBILE DEVICES */
 @media (max-width: 768px) {
-    /* Adjust font size for screens with a max width of 768px */
     body {
-        font-size: 16px;
-        max-width: 90%; /* Adjust the max-width */
+        font-size: 13px;
     }
 
-    header {
-        padding: 10px;
-    }
-
-    footer {
-        padding: 10px;
-    }
-
-    .governor-image {
-        margin-right: 0;
-        width: 120px; /* Adjust the width for smaller screens */
+    nav ul {
+        padding: 5px 0;
     }
 
     nav li {
-        display: block;
-        margin: 5px 0;
+        margin-right: 10px;
     }
 
-    .slider {
-        max-width: 100%;
+    footer {
+        padding: 6px 0;
     }
 
-    .slide {
-        flex: 0 0 100%; /* Each slide takes up the full width */
+    .footer-column ul li {
+        font-size: 8px;
     }
 
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
+    .footer-bottom p {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    nav ul {
+        padding: 3px 0;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; /* Allow wrapping if needed */
+        justify-content: center; /* Center the items */
+    }
+
+    nav li {
+        margin-right: 5px;
+    }
+
+    footer {
+        padding: 4px 0;
     }
 
     .footer-container {
@@ -396,99 +406,15 @@ footer {
     }
 
     .footer-column {
-        padding: 0;
+        padding: 5px 0;
         text-align: center;
-    }
-}
-
-/* @media (max-width: 480px) {
-    /* Further adjustments for screens with a max width of 480px */
-/*     body {
-        font-size: 8px;
-    }
-
-    header h1 {
-        font-size: 15px;
-    } */
-
-/*     .governor-image {
-        width: 100px; /* Adjust the width for smaller screens */
-/*     }
-
-    .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-    } */
-
-/*     nav a {
-       text-decoration: none;
-       color: #00FF00;
-       font-weight: bold;
-       font-family: Arial, sans-serif;
-       font-size: 12px;
-   } */ 
-
-   /* Add hover effect to navigation links...    text-decoration: underline; */
-/*    nav a:hover {
-       color: yellow;
-       font-size: 15px;	
-       font-weight: bold;
-   } */ 
-
-/* } */
-
-@media (max-width: 480px) {
-    body {
-        font-size: 12px;
-    }
-
-    header h1 {
-        font-size: 24px;
-    }
-
-    .governor-image {
-        width: 80px;
-    }
-
-    .grid-container {
-        grid-template-columns: 1fr;
-    }
-
-    nav ul {
-        padding: 0;
-    }
-
-    nav li {
-        display: inline;
-        margin-right: 5px;
-    }
-
-    nav a {
-        font-size: 10px;
-    }
-
-    .footer-container {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-
-    .footer-column {
-        flex: 1 1 100%;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .footer-column ul {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding: 0;
     }
 
     .footer-column ul li {
-        display: inline;
-        margin: 0 5px;
-        font-size: 8px;
+        font-size: 7px;
+    }
+
+    .footer-bottom p {
+        font-size: 7px;
     }
 }

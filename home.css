@@ -419,5 +419,19 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    nav a {
+       text-decoration: none;
+       color: #00FF00;
+       font-weight: bold;
+       font-family: Arial, sans-serif;
+       font-size: 12px;
+   }
+
+   /* Add hover effect to navigation links...    text-decoration: underline; */
+   nav a:hover {
+       color: yellow;
+       font-size: 15px;	
+       font-weight: bold;
+   }
 	
 }

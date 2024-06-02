@@ -522,7 +522,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 nav a {
@@ -530,7 +530,7 @@ nav a {
     color: #00FF00;
     font-weight: bold;
     font-family: Arial, sans-serif;
-    font-size: 4px;
+    font-size: 12px;
 }
 
 /* Style the main content */

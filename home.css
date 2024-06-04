@@ -6,7 +6,7 @@
 
 /* Apply a background color and font styles to the whole page ... Futura,Sans-serif Calisto MT, sans-serif */
 body {
-    font-family: Verdana, sans-serif;
+    font-family: Verdana,sans-serif ;
     background-color: #005400; /*#f2f2f2;*/
     margin: 0 auto; /* Center the content horizontally */
     padding: 0;
@@ -25,6 +25,7 @@ header {
     margin-top: 10px;
     margin-bottom: -14px; 
 }
+
 
 /*header {
     color: yellow; 
@@ -69,6 +70,11 @@ header {
     }
 }
 } 
+
+
+
+
+
 
 /* Style the header title */
 header h1 {
@@ -352,4 +358,70 @@ footer {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); /* Add larger shadow on hover */
 }
 
+/* RESPONSIVE SETTING FOR MOBILE DEVICES 
+@media (max-width: 768px) {
+    /* Adjust font size for screens with a max width of 768px */
+    /* body {
+        font-size: 16px;
+    }
+}
+ /* @media (max-width: 768px) {
+    /* Adjust header and footer styles for smaller screens */
+     /* header {
+        padding: 10px;
+    }
+    footer {
+        padding: 10px;
+    }
+} */
+/*==========================================================================*/
+/*==========================================================================*/
+/* clothing.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 1px;
+    text-align: center;
+}
+
+.grid-item {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: Cyan;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.2); /* Background color with transparency */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
 

@@ -1,0 +1,326 @@
+/* Reset some default browser styles */
+/* body, h1, h2, p, ul, li {
+    margin: 5px;
+    padding: 0px;
+} */
+
+/* Apply a background color and font styles to the whole page ... Calisto MT, sans-serif */
+body {
+    font-family: Times New Roman, sans-serif;
+    background-color: #005400; /*#f2f2f2;*/
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0;
+    /*text-align: justify; */
+    max-width: 800px; /* Set a maximum width for the content */
+    font-size: 17px;    
+}
+
+/* Style the header................................ */
+header {
+    background-color: #333;
+    color: yellow; 
+    text-align: center;
+    padding: 16px 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.2);
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+/* Style the header title */
+header h1 {
+    font-size: 33px;
+    color: white
+}
+header-title {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+@keyframes colorChange {
+    10% {
+      color: black;
+    }
+    20% {
+      color: navy;
+    }
+    30% {
+      color: indigo;
+    }
+    40% {
+      color: blue;
+    }
+    50% {
+      color: green;
+    }
+    60% {
+      color: orange;
+    }
+    70% {
+      color: yellow;
+    }
+    80% {
+      color: magenta;
+    }
+    90% {
+      color: red;
+    }
+    100% {
+      color: maroon;
+    }
+}
+h1 {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  animation-name: colorChange;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;  
+}
+
+/* Style the navigation menu */
+nav ul {
+    background-color: #444;
+    list-style: none;
+    text-align: center;
+    padding: 10px 0px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1.5);
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00FF00;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Style the main content */
+main {
+    max-width: 800px;
+    margin: 5px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+/* Add hover effect to navigation links...    text-decoration: underline; */
+nav a:hover {
+    color: yellow;
+    font-size: 17px;	
+	font-weight: bold;
+}
+
+/* Style the sections */
+section {
+    margin-bottom: 20px;
+    padding: 0 5px;
+}
+
+/* Style for the active page */
+#navigation ul li.active a {
+  color: red;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 5px;
+  margin-top: 23px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+h3 {
+  margin: 0px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: teal;
+}
+h4 {
+  margin: 0px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 17px;
+  color: #0009;
+}
+.gs{
+  padding: 0px;
+  margin: 2px;
+  font-weight: normal;
+}
+
+/* Add styles for the Governor's picture */
+.governor-image {
+    float: center;
+    margin-right: -170px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.content {
+    padding: 10px;
+    margin-right: -20px;
+    margin-left: -20px;
+    margin-top: 0px;
+}
+
+/* Governor Signature ...  text-align: center;*/
+.gov-sig {
+  padding: 0px;
+  margin-top: 5px;
+  font-family: Times New Roman;
+  margin-bottom: 15px;
+}
+
+/* Footer styles #00FF00*/ 
+footer {
+    background-color: #333;
+    color: green; 
+    padding: 0px 0px;
+    height: 40px;
+    font-family: "Arial", sans-serif;
+    font-size: 10px; /* copyright */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
+    margin: 0px -1px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 0px 4px;
+    margin-top: -3px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 53px; /* Adjust the logo width as needed */
+    height: auto;
+    margin-right: 4px;
+    margin-left: -4px;
+
+}
+
+.footer-text {
+    font-size: 10px; /* optimus geo */
+    font-family: "Arial", sans-serif;
+	color: gray; /*#00FF00*/
+}
+
+.footer-text a {
+    color: gray; /*#00FF00*/
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    color: white;
+}
+
+/* ===========SLIDING IMAGES SETTING=========== */
+/* styles.css */
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    margin-top: 25px;
+    max-width: 800px; /* Set the fixed width */
+}
+
+.slide-container {
+    max-width: 800px; /* Occupy the full width of the slider */
+    display: flex;
+    transition: transform 0.5s;
+}
+
+.slide {
+    flex: 0 0 20%; /* Each slide takes up the full width */
+    max-width: 100%; /* Ensure the slide doesn't exceed the fixed width */
+}
+
+.slide img {
+    width: 100%;
+    max-width: 800px; /* Ensure the image doesn't exceed the fixed width */
+}
+
+/* RESPONSIVE SETTING FOR MOBILE DEVICES 
+@media (max-width: 768px) {
+    /* Adjust font size for screens with a max width of 768px */
+    /* body {
+        font-size: 16px;
+    }
+}
+ /* @media (max-width: 768px) {
+    /* Adjust header and footer styles for smaller screens */
+     /* header {
+        padding: 10px;
+    }
+    footer {
+        padding: 10px;
+    }
+} */
+/*==========================================================================*/
+/*==========================================================================*/
+/* clothing.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 1px;
+    text-align: center;
+}
+
+.grid-item {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: Cyan;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.2); /* Background color with transparency */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+	font-family: Arial, sans-serif;
+}
+
+.grid-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}

@@ -325,8 +325,10 @@ footer {
 .slider {
     overflow: hidden;
     position: relative;
-    margin-top: 25px;
+    margin-top: -5px;
+	margin-bottom: -9px;
     max-width: 800px; /* Set the fixed width */
+	margin-right: 1px;
 }
 
 .slide-container {
@@ -343,6 +345,16 @@ footer {
 .slide img {
     width: 100%;
     max-width: 800px; /* Ensure the image doesn't exceed the fixed width */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); /* Add default shadow */
+}
+
+.slide img:hover {
+    transform: scale(1.7); /* Enlarge the image on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); /* Add larger shadow on hover */
 }
 
 /* RESPONSIVE SETTING FOR MOBILE DEVICES 
@@ -398,7 +410,7 @@ footer {
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-	font-family: Arial, sans-serif;
+
 }
 
 .grid-item a {

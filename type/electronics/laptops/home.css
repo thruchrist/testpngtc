@@ -12,7 +12,7 @@ body {
     padding: 0;
     /*text-align: justify; */
     max-width: 800px; /* Set a maximum width for the content */
-    font-size: 15px;    
+    font-size: 13px;    
 }
 
 /* Style the header................................#333; */ 
@@ -325,10 +325,8 @@ footer {
 .slider {
     overflow: hidden;
     position: relative;
-    margin-top: -5px;
-	margin-bottom: -9px;
+    margin-top: 25px;
     max-width: 800px; /* Set the fixed width */
-	margin-right: 1px;
 }
 
 .slide-container {
@@ -345,16 +343,6 @@ footer {
 .slide img {
     width: 100%;
     max-width: 800px; /* Ensure the image doesn't exceed the fixed width */
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s, box-shadow 0.3s;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); /* Add default shadow */
-}
-
-.slide img:hover {
-    transform: scale(1.7); /* Enlarge the image on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8); /* Add larger shadow on hover */
 }
 
 /* RESPONSIVE SETTING FOR MOBILE DEVICES 
@@ -378,7 +366,7 @@ footer {
 /* clothing.css */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding: 1px;
     text-align: center;
@@ -410,7 +398,7 @@ footer {
     padding: 10px;
     border-radius: 5px;
     text-align: center;
-
+	font-family: Arial, sans-serif;
 }
 
 .grid-item a {
@@ -419,7 +407,83 @@ footer {
     display: block;
 }
 
-.grid-item:hover {
+/*.grid-item:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+} */
+
+.item-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
 }
+
+.item-images img {
+    width: 100%;
+    height: auto;
+    max-width: calc(50% - 5px); /* Ensures three images per row with spacing */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.item-info h3, .item-info p {
+    margin: 10px 0;
+}
+
+.item-info .description {
+    margin-top: 15px;
+}
+
+.item-info .contact a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.item-info .contact a:hover {
+    text-decoration: underline;
+/* ================NEXT PAGE=================== */
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 27px;
+    margin-bottom: -10px;
+    align-items: center;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.prev-page-arrow,
+.next-page-arrow {
+    display: inline-block;
+    padding: 0px;
+    font-size: 17px;
+    background-color: Green;
+    text-decoration: none;
+    color: #333;
+    border: 0px solid black;
+    border-radius: 6px;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial;
+    font-weight: bold;
+}
+
+.prev-page-arrow:hover,
+.next-page-arrow:hover {
+    background-color: magenta;
+    color: #000;
+	border: 1px solid black;
+}
+
+.prev-page-arrow span,
+.next-page-arrow span {
+    display: inline-block;
+    margin-left: 0px;
+	margin-right: 0px;
+    font-weight: bold;
+    font-size: 17px; /* Increase size for thicker arrow */
+}
+
